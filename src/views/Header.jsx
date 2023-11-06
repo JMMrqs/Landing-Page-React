@@ -1,8 +1,7 @@
-import { MenuRow } from '../index';
-
+import { MenuRow } from '../components/Header/MenuRow.jsx';
 export function Header() {
     return (
-        <div>
+        <div className="header">
             <MenuRow />
         </div>
     );

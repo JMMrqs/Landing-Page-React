@@ -1,6 +1,6 @@
 export function MenuItem() {
     return (
-        <div>
+        <div className="menu-item">
             <a href="">Home</a>
             <a href="">About Me</a>
             <a href="">Services</a>

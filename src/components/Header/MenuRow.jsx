@@ -1,12 +1,12 @@
-import { MenuItem } from '../../index';
-import { MenuHireMeBtn } from '../../index';
+import { MenuItem } from './MenuItem.jsx';
+import { GoToBtn } from '../shared/GoToBtn.jsx';
 
 export function MenuRow() {
     return (
-        <div>
-            <img src="../assets/images/MenuLogo.png" alt="Menu logo" />
+        <div className="menu-row">
+            <img src="../../../public/images/MenuLogo.png" alt="Menu logo" />
             <MenuItem />
-            <MenuHireMeBtn />
+            <GoToBtn text="Hire Me" />
         </div>
     );
 }
