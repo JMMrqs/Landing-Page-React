@@ -6,8 +6,8 @@
     flex-wrap: wrap;
     align-items: center;
 }
-.menu-row > img {
-    height: 40px;
+.menu-row-name {
+    font-weight: 600;
 }
 .menu-row .menu-item {
     display: flex;

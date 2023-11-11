@@ -3,6 +3,7 @@
 body {
     color: #fff;
     font-family: 'Exo 2', sans-serif;
+    scroll-behavior: smooth;
 }
 .root > * {
     padding: 0 8dvw;

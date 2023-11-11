@@ -1,3 +1,8 @@
 export function BannerSocialIcons() {
-    return <div style={{ color: '#aaa' }}>TODO: [ICONS HERE]</div>;
+    return (
+        <div className="banner-social-icons">
+            <img src="../../../public/images/BannerLinkedInIcon.svg" alt="LinkedIn Icon" />
+            <img src="../../../public/images/BannerGithubIcon.svg" alt="Github Icon" />
+        </div>
+    );
 }

@@ -7,19 +7,19 @@ export function Service() {
         {
             id: crypto.randomUUID(),
             img: '../../public/images/ServiceLaptopCode.svg',
-            title: 'Web Development',
-            body: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+            title: 'BackEnd Web Development',
+            body: 'Creation and Maintenance of Node and Flask based back ends and SQL based databases (Maintenance)',
         },
         {
             id: crypto.randomUUID(),
-            img: '../../public/images/ServiceMobileAlt.svg',
-            title: 'Apps Development',
-            body: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+            img: '../../public/images/ServiceLaptopCode.svg',
+            title: 'FrontEnd Web Development',
+            body: 'Creation and Maintenance of Vanilla Stack and React based front ends',
         },
         {
             id: crypto.randomUUID(),
             img: '../../public/images/ServiceChartBar.svg',
-            title: 'Digital Marketing',
+            title: '[PLACEHOLDER]',
             body: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
         },
     ];

@@ -9,6 +9,9 @@
 .go-to-btn:hover {
     cursor: pointer;
 }
+.go-to-btn:active {
+    background-color: #999;
+}
 .heading {
     border-bottom: 1px solid white;
     padding: 10px 20px 0 20px;

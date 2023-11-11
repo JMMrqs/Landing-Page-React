@@ -4,33 +4,38 @@ export function SkillsContainer() {
     const skills = [
         {
             id: crypto.randomUUID(),
-            skillName: 'HTML-5',
+            skillName: 'JavaScript',
+            skillLevel: '90%',
+        },
+        {
+            id: crypto.randomUUID(),
+            skillName: 'HTML + CSS',
             skillLevel: '80%',
         },
         {
             id: crypto.randomUUID(),
-            skillName: 'CSS-3',
-            skillLevel: '75%',
-        },
-        {
-            id: crypto.randomUUID(),
-            skillName: 'Bootstrap',
+            skillName: 'TypeScript',
             skillLevel: '60%',
         },
         {
             id: crypto.randomUUID(),
-            skillName: 'JavaScript',
-            skillLevel: '50%',
-        },
-        {
-            id: crypto.randomUUID(),
-            skillName: 'Adobe Photoshop',
+            skillName: 'React',
             skillLevel: '70%',
         },
         {
             id: crypto.randomUUID(),
-            skillName: 'Adobe Illustrator',
-            skillLevel: '65%',
+            skillName: 'TailwindCSS',
+            skillLevel: '40%',
+        },
+        {
+            id: crypto.randomUUID(),
+            skillName: 'Python',
+            skillLevel: '60%',
+        },
+        {
+            id: crypto.randomUUID(),
+            skillName: 'SQLite (SQL)',
+            skillLevel: '45%',
         },
     ];
     return (

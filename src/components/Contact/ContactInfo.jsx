@@ -8,19 +8,15 @@ export function ContactInfo() {
         <div className="contact-info">
             <div className="contact-info-item">
                 <img src={icons.phone} alt="phone icon" />
-                <p>
-                    +8801863-931220
-                    <br />
-                    +8801567-953483
-                </p>
+                <p>[NUMBER PLACEHOLDER]</p>
             </div>
             <div className="contact-info-item">
                 <img src={icons.mail} alt="mail icon" />
-                <p>mdriead.bd@gmail.com</p>
+                <p>joao.marcelo.mm@gmail.com</p>
             </div>
             <div className="contact-info-item">
                 <img src={icons.location} alt="location icon" />
-                <p>Zirabo, Ashulioa, Savar, Dhaka</p>
+                <p>Fortaleza, Ceará</p>
             </div>
         </div>
     );

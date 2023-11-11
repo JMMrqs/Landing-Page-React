@@ -8,9 +8,9 @@ export function BannerHomeIntroduction() {
                 <h1>
                     Hi, It's me
                     <br />
-                    <span className="home-text-large">MD RIEAD MIA</span>
+                    <span className="home-text-large">JOÃO MARCELO MARQUES</span>
                     <br />
-                    <span className="home-text-small">And I'm a</span> Frontend Developer
+                    <span className="home-text-small">And I'm a</span> Web Developer
                 </h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur placeat
