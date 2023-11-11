@@ -18,7 +18,7 @@ export function BannerHomeIntroduction() {
                     reprehenderit incidunt! Asperiores aliquam omnis ullam distinctio sed nisi?
                 </p>
                 <BannerSocialIcons />
-                <GoToBtn bgColor="#F86F03" text="Download CV" />
+                <GoToBtn bgColor="orange" text="Download CV" />
             </div>
             <img
                 className="banner-img"
