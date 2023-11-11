@@ -1,3 +1,4 @@
+import '../css/Portfolio.css';
 import { Heading } from '../components/shared/Heading.jsx';
 import { PortfolioCardsContainer } from '../components/Portfolio/PortfolioCardsContainer.jsx';
 

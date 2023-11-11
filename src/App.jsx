@@ -1,4 +1,4 @@
-import './App.css';
+import './css/Views.css';
 
 import { Header } from './views/Header.jsx';
 import { Banner } from './views/Banner.jsx';

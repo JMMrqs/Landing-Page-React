@@ -1,0 +1,34 @@
+/* Portfolio  */
+.portfolio-cards-container {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+}
+.portfolio-card {
+    height: 220px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.portfolio-card-overlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(173, 91, 251, 0.6);
+    opacity: 0;
+    transition: all 125ms ease-in-out;
+}
+.portfolio-card-overlay:hover {
+    opacity: 1;
+    transition: all 125ms ease-in-out;
+    cursor: pointer;
+}
+.portfolio-card-overlay img {
+    width: 40px;
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap');
+
+body {
+    color: #fff;
+    font-family: 'Exo 2', sans-serif;
+}
+.root > * {
+    padding: 0 8dvw;
+}
+.root > :nth-child(1n + 3) {
+    display: grid;
+    row-gap: 6rem;
+    justify-items: center;
+    padding-bottom: 130px;
+}
+
+/* views */
+.header {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    background-color: #170550;
+}
+.banner {
+    background-color: #31065a;
+    display: flex;
+    padding-bottom: 10dvh;
+}
+.about {
+    background-color: #170550;
+}
+.service {
+    background-color: #31065a;
+}
+.skills {
+    background-color: #170550;
+}
+.portfolio {
+    background-color: #31065a;
+}
+.contact {
+    background-color: #170550;
+}
+.footer {
+    background-color: #31065a;
+    padding: 1.5rem 2dvw !important;
+}

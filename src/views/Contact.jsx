@@ -1,3 +1,4 @@
+import '../css/Contact.css';
 import { Heading } from '../components/shared/Heading.jsx';
 import ContactContainer from '../components/Contact/ContactContainer.jsx';
 

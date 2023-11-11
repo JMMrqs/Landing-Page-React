@@ -1,0 +1,29 @@
+/* Banner */
+.banner-home-introduction {
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner-home-text h1 {
+    color: #f86f03;
+}
+.banner-home-text h1 .home-text-large {
+    color: #fff;
+    font-size: 3.5rem;
+}
+.banner-home-text h1 .home-text-small {
+    color: #fff;
+}
+.banner-home-text {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    min-width: 305px;
+}
+.banner-img {
+    flex: 5;
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+}

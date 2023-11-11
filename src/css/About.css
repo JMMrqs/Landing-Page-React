@@ -1,0 +1,19 @@
+/* About */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+.about-text {
+    max-width: calc(730px + 2dvw);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.about-container img {
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+    max-width: 330px;
+}

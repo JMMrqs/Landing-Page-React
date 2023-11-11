@@ -1,3 +1,4 @@
+import '../css/Skills.css';
 import { Heading } from '../components/shared/Heading.jsx';
 import { SkillsContainer } from '../components/Skills/SkillsContainer.jsx';
 

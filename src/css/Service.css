@@ -1,0 +1,20 @@
+/* Service  */
+.service-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service-cards .service-card {
+    background-color: white;
+    color: #170550;
+    border-radius: 10px;
+    height: 410px;
+    max-width: calc(410px * 0.8);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}

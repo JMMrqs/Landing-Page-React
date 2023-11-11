@@ -1,0 +1,20 @@
+/* Header */
+.menu-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 3vw;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.menu-row > img {
+    height: 40px;
+}
+.menu-row .menu-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+}
+.menu-row a {
+    text-decoration: none;
+    color: #fff;
+}
