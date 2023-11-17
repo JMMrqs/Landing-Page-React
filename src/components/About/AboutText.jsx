@@ -3,16 +3,25 @@ import { GoToBtn } from '../shared/GoToBtn';
 export function AboutText() {
     return (
         <div className="about-text">
-            <h2>Web Developer</h2>
+            <h2>Developer</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At reiciendis, quas
-                voluptatum facere quam iusto itaque sapiente dolor provident aspernatur unde,
-                suscipit illum, velit similique animi iste corporis repellendus veritatis minus
-                voluptas. Sunt, eligendi. Praesentium explicabo facere quo ad earum.
+                - Wu Xiang
+                <br />
+                _Wu is simply a lack, or emptiness.
+                <br />
+                _Xiang has many meanings, but in this context refers to Buddhist concept of form or
+                external manifestation. Often as opposed to something's intrinsic, unchanging core
+                nature.
+                <br />
+                -Wu Xiang as a term is thus used to signify something so abstract or profound that
+                it has no external manifestation.
             </p>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At reiciendis, quas
-                voluptatum facere quam iusto itaque sapiente dolor provident.
+                Alternative:
+                <br />
+                Wu means emptiness;
+                <br />
+                Xiang means eternal manifestation.
             </p>
             <GoToBtn text="Read More..." />
         </div>

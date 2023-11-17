@@ -10,21 +10,21 @@ export function BannerHomeIntroduction() {
                     <br />
                     <span className="home-text-large">JOÃO MARCELO MARQUES</span>
                     <br />
-                    <span className="home-text-small">And I'm a</span> Web Developer
+                    <span className="home-text-small">And I'm a</span> Developer
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur placeat
-                    quisquam voluptas, quis, expedita distinctio ullam modi eaque aut quidem rerum
-                    reprehenderit incidunt! Asperiores aliquam omnis ullam distinctio sed nisi?
+                    Living life is like climbing a mountain.
+                    <br />
+                    If the mountain is too tall, you can take a rest and continue climbing, or you
+                    can come down and rest before attempting again. There are also many mountains,
+                    so you don't have to only try one.
+                    <br />
+                    [Past Life Regressor]
                 </p>
                 <BannerSocialIcons />
                 <GoToBtn bgColor="orange" text="Download CV" />
             </div>
-            <img
-                className="banner-img"
-                src="../../../public/images/BannerImage.png"
-                alt="Theme image"
-            />
+            <img className="banner-img" src="/images/BannerImage.png" alt="Theme image" />
         </div>
     );
 }

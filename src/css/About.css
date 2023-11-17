@@ -11,9 +11,16 @@
     flex-direction: column;
     gap: 2rem;
 }
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
 .about-container img {
     width: inherit;
     height: inherit;
     object-fit: contain;
     max-width: 330px;
+}
+.about-image-container {
+    text-align: center;
 }

@@ -6,19 +6,19 @@ export function Service() {
     const cardsData = [
         {
             id: crypto.randomUUID(),
-            img: '../../public/images/ServiceLaptopCode.svg',
+            img: '/images/ServiceLaptopCode.svg',
             title: 'BackEnd Web Development',
             body: 'Creation and Maintenance of Node and Flask based back ends and SQL based databases (Maintenance)',
         },
         {
             id: crypto.randomUUID(),
-            img: '../../public/images/ServiceLaptopCode.svg',
+            img: '/images/ServiceLaptopCode.svg',
             title: 'FrontEnd Web Development',
             body: 'Creation and Maintenance of Vanilla Stack and React based front ends',
         },
         {
             id: crypto.randomUUID(),
-            img: '../../public/images/ServiceChartBar.svg',
+            img: '/images/ServiceChartBar.svg',
             title: '[PLACEHOLDER]',
             body: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
         },

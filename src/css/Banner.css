@@ -5,6 +5,7 @@
 }
 .banner-home-text h1 {
     color: #f86f03;
+    line-height: 1.4;
 }
 .banner-home-text h1 .home-text-large {
     color: #fff;
@@ -12,6 +13,10 @@
 }
 .banner-home-text h1 .home-text-small {
     color: #fff;
+}
+.banner-home-text p {
+    font-size: 1.2rem;
+    line-height: 1.2;
 }
 .banner-home-text {
     flex: 6;

@@ -2,8 +2,8 @@
 .portfolio-cards-container {
     width: 100%;
     display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 0.9vw;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
 }
 .portfolio-card {
     height: 220px;

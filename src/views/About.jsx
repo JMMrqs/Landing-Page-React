@@ -7,7 +7,10 @@ export function About() {
         <div className="about">
             <Heading firstWord="About" secondWord="Me" />
             <div className="about-container">
-                <img src="../../public/images/AboutImg.png" alt="" />
+                <div className="about-image-container">
+                    <img id="profile-img" src="/images/AboutImg.png" alt="" />
+                    <label htmlFor="profile-image">[NOT ACTUALLY ME]</label>
+                </div>
                 <AboutText />
             </div>
         </div>

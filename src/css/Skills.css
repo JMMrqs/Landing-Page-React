@@ -7,6 +7,8 @@
 }
 .skill-row {
     display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .skill-name {
     flex: 1;

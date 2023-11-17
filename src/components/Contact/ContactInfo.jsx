@@ -1,8 +1,8 @@
 export function ContactInfo() {
     const icons = {
-        phone: '../../../public/images/ContactPhoneAlt.svg',
-        mail: '../../../public/images/ContactEnvelope.svg',
-        location: '../../../public/images/ContactLocationArrow.svg',
+        phone: '/images/ContactPhoneAlt.svg',
+        mail: '/images/ContactEnvelope.svg',
+        location: '/images/ContactLocationArrow.svg',
     };
     return (
         <div className="contact-info">
