@@ -1,8 +1,8 @@
 import '../../css/shared.css';
-export function Heading({ firstWord, secondWord }) {
+export function Heading({ firstWord = null, secondWord = null }) {
     return (
         <h1 className="heading">
-            {firstWord} <span>{secondWord}</span>
+            {firstWord} {secondWord && <span>{secondWord}</span>}
         </h1>
     );
 }

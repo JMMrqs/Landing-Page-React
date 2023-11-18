@@ -24,7 +24,7 @@
     flex-direction: column;
     gap: 1.5rem;
     justify-content: center;
-    min-width: 305px;
+    min-width: 240px;
 }
 .banner-img {
     flex: 5;

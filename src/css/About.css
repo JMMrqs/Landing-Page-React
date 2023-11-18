@@ -19,7 +19,7 @@
     width: inherit;
     height: inherit;
     object-fit: contain;
-    max-width: 330px;
+    max-width: min(80vw, 330px);
 }
 .about-image-container {
     text-align: center;
