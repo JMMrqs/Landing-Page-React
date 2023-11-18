@@ -1,6 +1,6 @@
-import '../css/Service.css';
-import { Heading } from '../components/shared/Heading';
-import { ServiceCard } from '../components/Service/ServiceCard';
+import './Service.css';
+import { Heading } from '../../components/shared/Heading';
+import { ServiceCard } from '../../components/Service/ServiceCard';
 
 export function Service() {
     const cardsData = [

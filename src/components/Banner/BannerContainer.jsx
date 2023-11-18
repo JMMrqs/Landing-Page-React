@@ -1,9 +1,9 @@
 import { BannerSocialIcons } from './BannerSocialIcons.jsx';
 import { GoToBtn } from '../shared/GoToBtn.jsx';
 
-export function BannerHomeIntroduction() {
+export function BannerContainer() {
     return (
-        <div className="banner-home-introduction">
+        <div className="banner-container">
             <div className="banner-home-text">
                 <h1>
                     Hi, It's me

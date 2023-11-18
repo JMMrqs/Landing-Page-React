@@ -1,5 +1,5 @@
 /* Banner */
-.banner-home-introduction {
+.banner-container {
     display: flex;
     flex-wrap: wrap;
 }

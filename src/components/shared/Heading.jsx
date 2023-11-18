@@ -1,4 +1,4 @@
-import '../../css/shared.css';
+import './Heading.css';
 export function Heading({ firstWord = null, secondWord = null }) {
     return (
         <h1 className="heading">

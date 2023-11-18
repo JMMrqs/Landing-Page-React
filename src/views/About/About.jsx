@@ -1,6 +1,6 @@
-import '../css/About.css';
-import { Heading } from '../components/shared/Heading.jsx';
-import { AboutText } from '../components/About/AboutText.jsx';
+import './About.css';
+import { Heading } from '../../components/shared/Heading.jsx';
+import { AboutText } from '../../components/About/AboutText.jsx';
 
 export function About() {
     return (

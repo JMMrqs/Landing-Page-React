@@ -24,7 +24,7 @@ body {
 .banner {
     background-color: #31065a;
     display: flex;
-    padding-bottom: 10dvh;
+    padding-bottom: 5dvh;
 }
 .about {
     background-color: #170550;

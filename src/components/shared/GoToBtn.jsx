@@ -1,4 +1,4 @@
-import '../../css/shared.css';
+import './GoToBtn.css';
 export function GoToBtn({ text, bgColor }) {
     let bgClass = '';
     if (bgColor === 'orange') {
