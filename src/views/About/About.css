@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    flex-basis: 530px;
+    flex-grow: 1;
 }
 .about-text p {
     font-size: 1.2rem;
@@ -20,6 +22,7 @@
     height: inherit;
     object-fit: contain;
     max-width: min(80vw, 330px);
+    border-radius: 20px;
 }
 .about-image-container {
     text-align: center;

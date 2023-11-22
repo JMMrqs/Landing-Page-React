@@ -6,16 +6,16 @@
     justify-content: center;
 }
 .service-cards .service-card {
-    background-color: white;
+    background-color: #f3f3f3;
     color: #170550;
     border-radius: 10px;
-    height: 410px;
-    max-width: calc(410px * 0.8);
+    height: 380px;
+    max-width: calc(380px * 0.8);
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     text-align: center;
     padding: 0.5rem;
 }

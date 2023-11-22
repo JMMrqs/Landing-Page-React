@@ -9,10 +9,10 @@
 .menu-row-name {
     font-weight: 600;
     transition: 250ms;
+    border-bottom: #f86f0300 solid 2px;
 }
 .menu-row-name:hover {
     border-bottom: #f86f03 solid 2px;
-    translate: 0 1px;
     transition: 100ms;
 }
 .menu-row .menu-item {

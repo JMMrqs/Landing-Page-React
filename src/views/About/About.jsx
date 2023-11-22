@@ -8,8 +8,7 @@ export function About() {
             <Heading firstWord="About" secondWord="Me" />
             <div className="about-container">
                 <div className="about-image-container">
-                    <img id="profile-img" src="/images/AboutImg.png" alt="" />
-                    <label htmlFor="profile-image">[NOT ACTUALLY ME]</label>
+                    <img id="profile-img" src="/images/AboutImageAnime.jpeg" alt="" />
                 </div>
                 <AboutText />
             </div>
