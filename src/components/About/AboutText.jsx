@@ -23,7 +23,7 @@ export function AboutText() {
                 <br />
                 Xiang means eternal manifestation.
             </p>
-            <GoToBtn text="Read More..." />
+            <GoToBtn text="Read More..." route="about" />
         </div>
     );
 }

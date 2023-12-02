@@ -1,12 +1,14 @@
+import { Link } from 'react-router-dom';
+
 export function MenuItem() {
     return (
         <div className="menu-item">
-            <a href="">Home</a>
-            <a href="">About Me</a>
-            <a href="">Services</a>
-            <a href="">Skills</a>
-            <a href="">Portfolio</a>
-            <a href="">Contact</a>
+            <Link to="/">Home</Link>
+            <Link to="/about">About Me</Link>
+            <Link to="/service">Services</Link>
+            <Link to="/skills">Skills</Link>
+            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/contact">Contact</Link>
         </div>
     );
 }

@@ -17,3 +17,7 @@
 .go-to-btn-orange:active {
     background-color: #b15311;
 }
+.go-to-btn > a {
+    color: inherit;
+    text-decoration: none;
+}

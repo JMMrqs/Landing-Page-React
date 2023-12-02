@@ -2,7 +2,7 @@
 .banner-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 3rem;
 }
 .banner-home-text h1 {
     color: #f86f03;
@@ -20,18 +20,24 @@
     line-height: 1.2;
 }
 .banner-home-text {
-    flex: 6;
+    flex: 7;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     justify-content: center;
-    min-width: 240px;
+    min-width: 260px;
 }
 .banner-img {
-    margin: auto;
-    width: inherit;
-    height: inherit;
-    object-fit: scale-down;
+    /* margin: auto; */
+    /* width: inherit; */
+    /* height: inherit; */
+    /* object-fit: scale-down; */
+    /* TODO: ADD MEDIA QUERY FOR CHANGING DISPLAY FLEX + IMAGE BEHAVIOR FOR RESPONSIVINESS */
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
 }
 .banner-social-icons {
     display: flex;

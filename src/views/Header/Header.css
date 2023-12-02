@@ -30,4 +30,5 @@
 .menu-row a:hover {
     color: #f86f03;
     transition: 85ms;
+    cursor: pointer;
 }

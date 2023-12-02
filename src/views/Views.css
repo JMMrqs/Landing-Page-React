@@ -17,6 +17,7 @@ body {
 
 /* views */
 .header {
+    position: fixed;
     width: 100%;
     padding: 0.8rem 1.5rem;
     background-color: #170550;
@@ -25,7 +26,7 @@ body {
     background-color: #31065a;
     display: flex;
     padding-bottom: 5dvh;
-    min-height: 95vh;
+    min-height: 94vh;
 }
 .about {
     background-color: #61707d;

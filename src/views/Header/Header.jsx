@@ -1,9 +1,10 @@
 import './Header.css';
 import { MenuRow } from '../../components/Header/MenuRow.jsx';
-export function Header() {
+
+export function Header({ page }) {
     return (
         <div className="header">
-            <MenuRow />
+            <MenuRow page={page} />
         </div>
     );
 }
