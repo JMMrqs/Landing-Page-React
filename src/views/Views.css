@@ -17,7 +17,7 @@ body {
 
 /* views */
 .header {
-    position: fixed;
+    position: sticky;
     width: 100%;
     padding: 0.8rem 1.5rem;
     background-color: #170550;

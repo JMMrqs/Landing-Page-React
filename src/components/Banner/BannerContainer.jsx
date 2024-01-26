@@ -1,5 +1,6 @@
 import { BannerSocialIcons } from './BannerSocialIcons.jsx';
 import { GoToBtn } from '../shared/GoToBtn.jsx';
+import { serverUrl } from '../../url.js';
 
 export function BannerContainer() {
     return (
@@ -24,7 +25,11 @@ export function BannerContainer() {
                 <BannerSocialIcons />
                 <GoToBtn bgColor="orange" text="Download CV" />
             </div>
-            <img className="banner-img" src="/images/BannerImage.png" alt="Theme image" />
+            <img
+                className="banner-img"
+                src={`${serverUrl}/static/BannerImage.png`}
+                alt="Theme image"
+            />
         </div>
     );
 }

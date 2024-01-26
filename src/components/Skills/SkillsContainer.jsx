@@ -1,46 +1,21 @@
 import { SkillRow } from './SkillRow.jsx';
+import { useState, useEffect } from 'react';
 
 export function SkillsContainer() {
-    const skills = [
-        {
-            id: crypto.randomUUID(),
-            skillName: 'JavaScript',
-            skillLevel: '90%',
-        },
-        {
-            id: crypto.randomUUID(),
-            skillName: 'HTML + CSS',
-            skillLevel: '80%',
-        },
-        {
-            id: crypto.randomUUID(),
-            skillName: 'TypeScript',
-            skillLevel: '60%',
-        },
-        {
-            id: crypto.randomUUID(),
-            skillName: 'React',
-            skillLevel: '70%',
-        },
-        {
-            id: crypto.randomUUID(),
-            skillName: 'TailwindCSS',
-            skillLevel: '40%',
-        },
-        {
-            id: crypto.randomUUID(),
-            skillName: 'Python',
-            skillLevel: '60%',
-        },
-        {
-            id: crypto.randomUUID(),
-            skillName: 'SQLite (SQL)',
-            skillLevel: '45%',
-        },
-    ];
+    const [skills, setSkills] = useState(null);
+    const url = 'http://localhost:4000';
+
+    useEffect(() => {
+        fetch(`${url}/api/skills/`)
+            .then((response) => response.json())
+            .then((data) => {
+                return setSkills(data);
+            });
+    }, []);
+
     return (
         <div className="skills-row">
-            {skills.map(({ id, skillName, skillLevel }) => {
+            {skills?.map(({ id, skillName, skillLevel }) => {
                 return <SkillRow key={id} skill={skillName} skillLevel={skillLevel} />;
             })}
         </div>
