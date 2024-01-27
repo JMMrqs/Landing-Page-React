@@ -1,49 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap");
 
 body {
-    color: #fff;
-    font-family: 'Exo 2', sans-serif;
-    scroll-behavior: smooth;
+  color: #fff;
+  font-family: "Exo 2", sans-serif;
+  scroll-behavior: smooth;
 }
 .root > * {
-    padding: 0 8dvw;
+  padding: 0 8dvw;
 }
 .root > :nth-child(1n + 3) {
-    display: grid;
-    row-gap: 6rem;
-    justify-items: center;
-    padding-bottom: 130px;
+  display: grid;
+  row-gap: 6rem;
+  justify-items: center;
+  padding-bottom: 130px;
 }
 
 /* views */
 .header {
-    position: sticky;
-    width: 100%;
-    padding: 0.8rem 1.5rem;
-    background-color: #170550;
+  position: sticky;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  background-color: #170550;
 }
 .banner {
-    background-color: #31065a;
-    display: flex;
-    padding-bottom: 5dvh;
-    min-height: 94vh;
+  background-color: #31065a;
+  display: flex;
+  padding-bottom: 5dvh;
+  min-height: 94vh;
 }
 .about {
-    background-color: #61707d;
+  background-color: #61707d;
 }
-.service {
-    background-color: #31065a;
+.services {
+  background-color: #31065a;
 }
 .skills {
-    background-color: #170550;
+  background-color: #170550;
 }
 .portfolio {
-    background-color: #31065a;
+  background-color: #31065a;
 }
 .contact {
-    background-color: #170550;
+  background-color: #170550;
 }
 .footer {
-    background-color: #31065a;
-    padding: 1.5rem 2dvw !important;
+  background-color: #31065a;
+  padding: 1.5rem 2dvw !important;
 }

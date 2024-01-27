@@ -1,35 +1,40 @@
-import { BannerSocialIcons } from './BannerSocialIcons.jsx';
-import { GoToBtn } from '../shared/GoToBtn.jsx';
-import { serverUrl } from '../../url.js';
+import { BannerSocialIcons } from "./BannerSocialIcons.jsx";
+import { GoToBtn } from "../shared/GoToBtn.jsx";
+import { serverUrl } from "../../url.js";
+import { fetchIntoState } from "../../composables/DataRequests.js";
+import { useState, useEffect } from "react";
 
 export function BannerContainer() {
-    return (
-        <div className="banner-container">
-            <div className="banner-home-text">
-                <h1>
-                    Hi, It's me
-                    <br />
-                    <span className="home-text-large">JOÃO MARCELO MARQUES</span>
-                    <br />
-                    <span className="home-text-small">And I'm a</span> Developer
-                </h1>
-                <p>
-                    Living life is like climbing a mountain.
-                    <br />
-                    If the mountain is too tall, you can take a rest and continue climbing, or you
-                    can come down and rest before attempting again. There are also many mountains,
-                    so you don't have to only try one.
-                    <br />
-                    [Past Life Regressor]
-                </p>
-                <BannerSocialIcons />
-                <GoToBtn bgColor="orange" text="Download CV" />
-            </div>
-            <img
-                className="banner-img"
-                src={`${serverUrl}/static/BannerImage.png`}
-                alt="Theme image"
-            />
-        </div>
-    );
+  const [bannerData, setBannerData] = useState({});
+  useEffect(() => {
+    fetchIntoState("/api/banner/", setBannerData);
+  }, []);
+
+  return (
+    <div className="banner-container">
+      <div className="banner-home-text">
+        <h1>
+          {bannerData.title1}
+          <br />
+          <span className="home-text-large">{bannerData.titleSpan1}</span>
+          <br />
+          <span className="home-text-small">{bannerData.titleSpan2}</span>
+          {bannerData.title2}
+        </h1>
+        <p>{bannerData.paragraph}</p>
+        <BannerSocialIcons
+          socialIcon1={bannerData.socialIcon1}
+          socialIcon2={bannerData.socialIcon2}
+          socialIconDesc1={bannerData.socialIconDesc1}
+          socialIconDesc2={bannerData.socialIconDesc2}
+        />
+        <GoToBtn bgColor="orange" text="Download CV" />
+      </div>
+      <img
+        className="banner-img"
+        src={`${serverUrl}/static/${bannerData.imgName}`}
+        alt={bannerData.imgDesc}
+      />
+    </div>
+  );
 }

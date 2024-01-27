@@ -1,21 +1,25 @@
-import { PortfolioCard } from './PortfolioCard.jsx';
+import { PortfolioCard } from "./PortfolioCard.jsx";
+import { serverUrl } from "../../url.js";
+import { fetchIntoState } from "../../composables/DataRequests.js";
+import { useState, useEffect } from "react";
 
 export function PortfolioCardsContainer() {
-    const cardImgs = [
-        { link: '/images/PortfolioCardImg1.png', id: crypto.randomUUID() },
-        { link: '/images/PortfolioCardImg1.png', id: crypto.randomUUID() },
-        { link: 'images/PortfolioCardImg2.png', id: crypto.randomUUID() },
-        { link: '/images/PortfolioCardImg3.png', id: crypto.randomUUID() },
-        { link: '/images/PortfolioCardImg4.png', id: crypto.randomUUID() },
-        { link: '/images/PortfolioCardImg5.png', id: crypto.randomUUID() },
-        { link: '/images/PortfolioCardImg6.png', id: crypto.randomUUID() },
-        { link: '/images/PortfolioCardImg4.png', id: crypto.randomUUID() },
-    ];
-    return (
-        <div className="portfolio-cards-container">
-            {cardImgs.map((image) => {
-                return <PortfolioCard key={image.id} image={image.link} />;
-            })}
-        </div>
-    );
+  const [cardData, setCardData] = useState([]);
+  useEffect(() => {
+    fetchIntoState("/api/portfolio/", setCardData);
+  }, []);
+
+  return (
+    <div className="portfolio-cards-container">
+      {cardData.map((card) => {
+        return (
+          <PortfolioCard
+            key={card.id}
+            image={`${serverUrl}/static/${card.link}`}
+            title={card.title}
+          />
+        );
+      })}
+    </div>
+  );
 }
