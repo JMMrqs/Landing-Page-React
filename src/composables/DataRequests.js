@@ -13,10 +13,16 @@ export async function fetchIntoState(path, setState) {
     setState(data);
 }
 
+/**
+ * Treats and posts form submission to the server. Async fuction.
+ *
+ * @param {Event} The form submission event.
+ * @return {Response} Response returned from the server.
+ */
 export async function postFormData(e) {
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
-    console.log(data);
+
     const res = await fetch(`${serverUrl}/api/contact/`, {
         method: 'POST',
         headers: {
@@ -24,6 +30,7 @@ export async function postFormData(e) {
         },
         body: JSON.stringify(data),
     });
+
     const resMessage = await res.json();
     console.log(resMessage);
 }
