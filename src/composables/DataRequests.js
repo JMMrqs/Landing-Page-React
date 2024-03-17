@@ -1,5 +1,9 @@
 import { serverUrl } from '../url.js';
 
+export const contactFormRoute = '/api/contact';
+export const dashboardFormRoute = '/api/dashboard/form';
+export const dashboardLanguagesRoute = '/api/dashboard/languages';
+
 /**
  * Fetches data from the specified path and updates the state with the retrieved data.
  *
@@ -16,14 +20,15 @@ export async function fetchIntoState(path, setState) {
 /**
  * Treats and posts form submission to the server. Async fuction.
  *
- * @param {Event} The form submission event.
+ * @param {Event} e The form submission event.
+ * @param {String} route Route to post to.
  * @return {Response} Response returned from the server.
  */
-export async function postFormData(e) {
+export async function postFormData(e, route) {
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
 
-    const res = await fetch(`${serverUrl}/api/contact/`, {
+    const res = await fetch(`${serverUrl}${route}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -33,4 +38,5 @@ export async function postFormData(e) {
 
     const resMessage = await res.json();
     console.log(resMessage);
+    return resMessage;
 }

@@ -1,9 +1,9 @@
-import { postFormData } from '../../../composables/DataRequests.js';
+import { postFormData, contactFormRoute } from '../../../composables/DataRequests.js';
 
 export function ContactForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
-        postFormData(e);
+        postFormData(e, contactFormRoute);
         e.target.reset();
     };
     return (
